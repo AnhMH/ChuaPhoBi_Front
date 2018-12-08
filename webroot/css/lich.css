@@ -1,0 +1,77 @@
+.item-cate table, td, th {
+    border: 1px solid #D6D6D6;
+}
+.lich_vn{
+	background:url(../images/nenlich.jpg)#FFFFE6 top no-repeat; width:250px; padding-bottom:5px;
+	}
+.lich_t_t{ padding-top:45px;}
+.lich_ft{ font-size:24px; font-weight:bold; color: #400000; text-align:center;}
+.lich_fa{ font-size:18px; color: #030;  line-height:20px; text-align:center; }
+.lich_fa strong {color: #F00;}
+.lich_ftu{ font-size:12px; color: #400000;  line-height:20px; text-transform:uppercase; font-weight:bold;}
+.lich_fn{ font-size:65px; font-weight:bold; color: #400000; text-align:center; line-height:60px;}
+.lvn_tl{ padding-left:108px;}
+
+#dhtmltooltip
+{
+	border-right: black 1px solid;
+	padding-right: 4px;
+	border-top: black 1px solid;
+	padding-left: 4px;
+	font-size: 10pt;
+	z-index: 100;
+	filter: alpha(opacity=90);
+	left: -300px;
+	visibility: hidden;
+	padding-bottom: 4px;
+	border-left: black 1px solid;
+	padding-top: 4px;
+	border-bottom: black 1px solid;
+	font-family: Arial;
+	position: absolute;
+	background-color:  #FFFFE5;
+}
+#dhtmlpointer{
+z-index: 101;
+left: -300px;
+visibility: hidden;
+position: absolute;
+
+}
+.bgc{/*background-color: #F7F7F7;*/}
+.bgm{/*background:url(../hinhanh.php)#FFFFE6 bottom no-repeat;border-top:1px solid #EEEEEE; */ }
+.bghn{	background-color: #FFFFD9; font-weight:bold}
+.leh1{ background-color: #f9a01b}
+.leh2{ background-color: #C1FFFF}
+.leh3{ background-color: #A4D1FF}
+.leh4{ background-color: #FFBFDF}
+.leh5{ background-color: #FFC6E2}
+.leh6{ background-color:  #FFFFCE}
+.leh7{ background-color: #E2E2E2}
+.leh8{ background-color: #FFFFC1}
+.leh9{ background-color:  #09F}
+.leh10{ background-color: #C6E2FF; }
+.maud{ color:#444}
+.maua{ color:#999}
+.hoa{ text-transform:uppercase;}
+.w{ width:35px;}
+.h{ height:30px;}
+.l_m{ width:100%}
+.bd{border: #e5e5e5 0px solid;}
+.bdn{border:1px solid #fff;}
+.l_wh{ width:13.9%}
+.l_whn{ width:13.9%; border:1px solid #fff !important; border-top:1px solid #eee !important;}
+.lich
+{
+	font-size: 14px;
+	
+	font-weight:normal; margin:-1px 0px 0px -1px;
+	cursor:hand; border:1px solid #eeeeee;
+}
+.l{ float:left}
+.cl{clear:both}
+.tr{ text-align:right; font-size:11px}
+.tl{ text-align:center; font-size:14px; font-weight:bold;}
+.tc{ text-align:center; padding:5px 0px;}
+.wm{ width:295px;}
+.month     { border-top:1px solid #eee; font-weight:bold; color:#999;}

@@ -3,7 +3,7 @@
     <head>
         <?php echo $this->element('layout/head'); ?>
     </head>
-    <body class="home blog">
+    <body class="home archive">
         <div class="wrapper">
             <div id="header-wrapper">
                 <?php echo $this->element('layout/header'); ?>
@@ -28,9 +28,7 @@
                 </section>        
                 <section class="main">
                     <div class="container">
-                        <div class="row">
-                            <?php echo $this->fetch('content'); ?>
-                        </div>
+                        <?php echo $this->fetch('content'); ?>
                     </div>
                 </section>
             </div>
