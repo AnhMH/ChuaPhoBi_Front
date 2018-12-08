@@ -95,7 +95,7 @@ class AppController extends Controller
         $this->action = strtolower($this->request->params['action']);
         $this->current_url = Router::url($this->here, true);
         $this->BASE_URL = Router::fullBaseUrl();
-        $this->_settings = array();
+        $this->_settings = $this->getSettings();
     }
 
     /**
@@ -125,7 +125,7 @@ class AppController extends Controller
         $this->set('isMobile', $this->isMobile());
         
         // Set common data
-        
+        $this->set('settings', $this->_settings);
         
         // Set default layout
         $this->setLayout();

@@ -1,16 +1,12 @@
-
 <!DOCTYPE HTML>
 <html lang="vi-VN">
     <head>
         <?php echo $this->element('layout/head'); ?>
     </head>
-
     <body class="home blog">
         <div class="wrapper">
             <div id="header-wrapper">
-
                 <?php echo $this->element('layout/header'); ?>
-
             </div>       
             <div id="main">
                 <section class="slider">
@@ -25,7 +21,8 @@
                                 <form method="get" id="searchform" action="tim-bai-viet.html">
                                     <input class="text-search" type="text" required="required" value="" name="tu_khoa" id="tim_bai_viet" placeholder="Từ khoá tìm kiếm">
                                     <input name="search" type="submit" id="buttom-search" class="buttom-search" value="">
-                                </form>            </div> 
+                                </form>            
+                            </div> 
                         </div>
                     </div>
                 </section>        
@@ -36,15 +33,11 @@
                         </div>
                     </div>
                 </section>
-
-
             </div>
             <?php echo $this->element('layout/footer'); ?>
-
         </div>
-
-
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="<?php echo $BASE_URL;?>/js/common.js"></script>
+        <!--<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/jquery-ui.custom.min.js"></script>-->
+        <script type="text/javascript" src="<?php echo $BASE_URL;?>/js/common.js?<?php echo time();?>"></script>
     </body>
 </html>

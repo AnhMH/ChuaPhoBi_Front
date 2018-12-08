@@ -11,4 +11,6 @@
         <div class="entry-content"></div>
     </div>
 </div>
-<div class="col-lg-3 col-sm-3 col-xs-12"></div>
+<div class="col-lg-3 col-sm-3 col-xs-12">
+    <?php echo $this->element('layout/right_content');?>
+</div>
