@@ -12,23 +12,8 @@
 <meta property="og:url" content="https://phathocdoisong.com/" />
 <meta property="og:site_name" content="Phật học đời sống - tin tức Phật giáo - tin nhanh" />
 <link rel="alternate" type="application/rss+xml" title="RSS|Phật học đời sống - tin tức Phật giáo - tin nhanh" href="feed.xml" />
-<style type="text/css">
-    img.wp-smiley,
-    img.emoji {
-        display: inline !important;
-        border: none !important;
-        box-shadow: none !important;
-        height: 1em !important;
-        width: 1em !important;
-        margin: 0 .07em !important;
-        vertical-align: -0.1em !important;
-        background: none !important;
-        padding: 0 !important;
-    }
-</style>
+
 <link rel='stylesheet' id='bootstrap-css'  href='css/bootstrap.min.css?ver=v3.3.4' type='text/css' media='' />
-<link rel='stylesheet' id='owl.carousel-css'  href='css/owl.carousel.min.css' type='text/css' media='' />
-<link rel='stylesheet' id='owl.theme-css'  href='css/owl.theme.default.min.css' type='text/css' media='' />
 <link rel='stylesheet' id='owl.animate-css'  href='css/animate.min.css' type='text/css' media='' />
 <link rel='stylesheet' id='roboto-condensed-css'  href='http://fonts.googleapis.com/css?family=Roboto+Condensed%3A300italic%2C400italic%2C700italic%2C400%2C700%2C300&#038;subset=latin%2Cvietnamese&#038;ver=4.3.1' type='text/css' media='all' />
 <link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.3.1' type='text/css' media='all' />
