@@ -1,33 +1,50 @@
-<!DOCTYPE html>
-<html>
+
+<!DOCTYPE HTML>
+<html lang="vi-VN">
     <head>
-        <!-- Theme Made By www.w3schools.com - No Copyright -->
-        <title>Bootstrap Theme The Band</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="<?php echo $BASE_URL; ?>/css/style.css?<?php echo FILE_VERSION; ?>" rel="stylesheet" type="text/css">
-        <link href="<?php echo $BASE_URL; ?>/css/mobile_style.css?<?php echo FILE_VERSION; ?>" rel="stylesheet" type="text/css" media="only screen and (max-width:750px)">
+        <?php echo $this->element('layout/head'); ?>
     </head>
 
-    <body id="body_<?php echo $controller . '_' . $action; ?>">
-        <div class="container">
-            <?= $this->fetch('content') ?>
+    <body class="home blog">
+        <div class="wrapper">
+            <div id="header-wrapper">
+
+                <?php echo $this->element('layout/header'); ?>
+
+            </div>       
+            <div id="main">
+                <section class="slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 col-sm-9">
+                                <div class="slider-posts-news">
+                                    <marquee>chao mung ban den vs website</marquee>
+                                </div>
+                            </div>  
+                            <div class="col-lg-3 col-sm-3">
+                                <form method="get" id="searchform" action="tim-bai-viet.html">
+                                    <input class="text-search" type="text" required="required" value="" name="tu_khoa" id="tim_bai_viet" placeholder="Từ khoá tìm kiếm">
+                                    <input name="search" type="submit" id="buttom-search" class="buttom-search" value="">
+                                </form>            </div> 
+                        </div>
+                    </div>
+                </section>        
+                <section class="main">
+                    <div class="container">
+                        <div class="row">
+                            <?php echo $this->fetch('content'); ?>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+            <?php echo $this->element('layout/footer'); ?>
+
         </div>
-        <footer class="container-fluid text-center">
-            <p>Online Store Copyright</p> 
-        </footer>
-        <?php echo $this->element('popup'); ?>
-        <div id="loader-wrapper">
-            <div class="loader">Loading...</div>
-        </div>
-        <script>
-            var BASE_URL = '<?php echo $BASE_URL;?>';
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="<?php echo $BASE_URL; ?>/js/custom.js?<?php echo FILE_VERSION; ?>"></script>
+
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php echo $BASE_URL;?>/js/common.js"></script>
     </body>
 </html>
-

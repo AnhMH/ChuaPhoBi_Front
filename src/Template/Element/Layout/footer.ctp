@@ -1,80 +1,53 @@
-<div class="footer-widgets container">
-    <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-3">
-            <div id="text-3" class="widget widget_text">			
-                <div class="textwidget">
-                    <p><img src="<?php echo $BASE_URL;?>/img/logotest.png" alt="<?php echo $settings['web_title'];?>"></p>
-                    <p><?php echo $settings['web_description'];?></p>
-                    <p style="margin-top:25px">
-                        <a class="mks_button mks_button_small squared" href="<?php echo $settings['facebook'];?>" target="_blank" style="color: #FFFFFF; background-color: #0288D1" >Find out more</a>
-                    </p>
+
+<div id="footer-wrapper">
+    <div class="social_fo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="page_site">
+                        <div class="contact"><a href="lien-he.html" class="face"><i class="fa fa-envelope"></i> Liên hệ</a> | <a href="http://lioahanoi.com/thanh-li-lioa-la-gi-lioa-thanh-ly-3kva-5kva-7kva-10kva-15kva-20kva.html" rel="dofollow" title="Thanh lý lioa" >Thanh lý lioa</a>  </div>
+
+
+                    </div>
                 </div>
-            </div>			
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
-            <div id="herald_posts_widget-10" class="widget herald_posts_widget">
-                <h4 class="widget-title h6"><span>Most Popular</span></h4>
-                <div class="row ">
-                    <?php foreach ($breaking_news as $p): ?>
-                    <article class="herald-lay-g post type-post status-publish format-gallery has-post-thumbnail hentry">
-                        <div class="row">
-                            <div class="col-lg-4 col-xs-3">
-                                <div class="herald-post-thumbnail">
-                                    <a href="<?php echo $BASE_URL;?>/tin-tuc/<?php echo $p['url'];?>" title="<?php echo $p['name'];?>">
-                                        <img width="74" height="55" src="<?php echo $p['image'];?>" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" sizes="(max-width: 74px) 100vw, 74px" />			
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 col-xs-9 herald-no-pad">
-                                <div class="entry-header">
-                                    <h2 class="entry-title h7">
-                                        <a href="<?php echo $BASE_URL;?>/tin-tuc/<?php echo $p['url'];?>">
-                                            <?php echo $p['name'];?>
-                                        </a>
-                                    </h2>
-                                    <div class="entry-meta meta-small">
-                                        <div class="meta-item herald-views">16,357 Views</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <?php endforeach; ?>
+                <div class="col-lg-6">
+                    <div class="social">Kết nối với chúng tôi
+                        <a target="_blank" href="https://www.facebook.com/phathocdoisong9/" class="icon_font face"><i class="fa fa-facebook-official"></i></a>
+                        <a target="_blank" href="https://twitter.com/PHDoiSong" class="icon_font twitte"><i class="fa fa-twitter-square"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UC4NvC2ABuDYatvOhlMC6GyA" class="icon_font in"><i class="fa fa-youtube-square"></i></a>
+                        <a target="_blank" href="feed.xml" class="icon_font rss"><i class="fa fa-rss-square"></i></a>
+                        <a target="_blank" href="https://plus.google.com/u/0/101522816289850945107/posts" class="icon_font gogle"><i class="fa fa-google-plus-square"></i></a>
+                    </div>
                 </div>
-            </div>			
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
-            <div id="tag_cloud-3" class="widget widget_tag_cloud">
-                <h4 class="widget-title h6"><span>Tags</span></h4>
-                <div class="tagcloud">
-                    <a href="https://demo.mekshq.com/herald/?tag=awesome" class="tag-cloud-link tag-link-55 tag-link-position-1" style="font-size: 13.384615384615pt;" aria-label="awesome (3 items)">awesome</a>
-                </div>
-            </div>			
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
-            <div id="herald_posts_widget-11" class="widget herald_posts_widget">
-                <h4 class="widget-title h6"><span>Most Discussed</span></h4>
-                <div class="row ">
-                    <?php echo $this->element('Layout/footer_facebook'); ?>
-                </div>
-            </div>			
-        </div>
-    </div>
-</div>
-<div class="footer-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="hel-l herald-go-hor">
-                    <div class="herald-copyright">Copyright &copy; <?php echo date('Y',time());?>. Created by <a href="https://hoanganhonline.com" target="_blank">HoangAnhOnline.Com</a>.</div>
-                </div>
-                <div class="hel-r herald-go-hor">
-                    <ul id="menu-herald-social-2" class="herald-soc-nav">
-                        <?php echo $this->element('Layout/social'); ?>
-                    </ul>							
+                <div class="to_top">
+                    <a href="#" class="scrollTo"><i class="fa fa-angle-double-up"></i></a>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <footer id="footer" class="footer">
+        <div class="container">
 
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright">
+                        <div class="copy" style="font-size:10px;">
+                            <p><strong>© Copyright 2015</strong> <a href="#" title="Thiết kế web Phật học đời sống - tin tức Phật giáo - tin nhanh"><strong>Phật học đời sống - tin tức Phật giáo - tin nhanh</strong></a> </p>
+
+                            <p >Tòa soạn: 207A - Võ Thị Sáu - Phường 7 - Quận 3 - Tp. HCM - ĐT: 0909974199 - VPĐD: 76 Lê Thị Trung - P.Phú Lợi - Tp. Thủ Dầu Một - Bình Dương - ĐT: 0122.771.9559</p>
+
+                            <em><p>Bài vở đóng góp, xin gởi về Ban biên tập qua địa chỉ email: <strong>phdoisong@gmail.com </strong>.  Ghi rõ nguồn <strong>www.phathocdoisong.com</strong> khi bạn phát hành lại thông tin từ website này.</p>
+
+                                <p>Bản quyền thuộc Phật Học Đời Sống. Designed by PHDS </p>
+                            </em>
+                        </div>
+                        <div class="logo-footer"><div class="hinhfooter"><a href="./" title="Phật học đời sống - tin tức Phật giáo - tin nhanh"> <img src="<?php echo $BASE_URL;?>/images/logo-tinh-thuong-viet.png" /> </a></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</div>
