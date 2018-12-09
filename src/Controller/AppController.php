@@ -200,4 +200,22 @@ class AppController extends Controller
         }
         return $data;
     }
+    
+    /**
+     * Commont function to get params of actions in controller.
+     * 
+     * @param array $default List parameter name. Default is array().
+     * @return array
+     */
+    public function getParams($default = array()) {
+        $params = $this->request->query;
+        if (!empty($default)) {
+            foreach ($default as $paramName => $paramValue) {
+                if (!isset($params[$paramName])) {
+                    $params[$paramName] = $paramValue;
+                }
+            }
+        }
+        return $params;
+    }
 }

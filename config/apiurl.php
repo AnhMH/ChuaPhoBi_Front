@@ -16,3 +16,4 @@ Configure::write('API.url_settings_general', 'settings/general');
 Configure::write('API.url_posts_gethomedata', 'posts/gethomedata');
 Configure::write('API.url_posts_detail', 'posts/detail');
 Configure::write('API.url_posts_all', 'posts/all');
+Configure::write('API.url_posts_list', 'posts/list');

@@ -251,6 +251,7 @@ if (!defined('USE_SUB_DIRECTORY')) {
 }
 
 Configure::write('Config.LanguageType', 1);
+Configure::write('Config.pageSize', 10);
 // Ref https://www.w3schools.com/tags/ref_language_codes.asp
 Configure::write('Config.Languages', array(
     'vi' => 1,
