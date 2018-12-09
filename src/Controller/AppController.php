@@ -19,6 +19,7 @@ use Cake\Event\Event;
 use Cake\Core\Configure;
 use Cake\Routing\Router;
 use App\Lib\Api;
+use Cake\I18n\I18n;
 
 /**
  * Application Controller
@@ -56,6 +57,10 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Cookie', [
+            'expires' => Configure::read('Config.CookieExpires'),
+            'httpOnly' => true
+        ]);
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -63,6 +68,11 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
         //$this->loadComponent('Csrf');
+        
+        list($lang, $languageType) = $this->getCurrentLanguage();
+        I18n::locale($lang);
+        $this->set('lang', $lang);
+        Configure::write('Config.LanguageType', $languageType);
     }
     
     /**
@@ -150,6 +160,44 @@ class AppController extends Controller
     public function getSettings() {
         $data = array();
         $data = Api::call(Configure::read('API.url_settings_general'), array());
+        return $data;
+    }
+    
+    /**
+     * Get current language
+     *
+     * @param none.
+     * @return string
+     */
+    public function getCurrentLanguage() {
+        if (isset($this->request->query['lang'])) {// GET
+            $language = $this->request->query['lang'];
+        } else if (isset ($this->request->data['lang'])) {// POST
+            $language = $this->request->data['lang'];
+        } else {
+            if ($this->Cookie->check(COOKIE_LANGUAGE)) {
+                $language = $this->Cookie->read(COOKIE_LANGUAGE);
+            } else {
+                $language = 'vi';
+            }
+        }
+        list($language, $languageType) = $this->validateLang($language);
+        $this->Cookie->write(COOKIE_LANGUAGE, $language);
+        return array($language, $languageType);
+    }
+    
+    /**
+     * Check valid language
+     * @param string $language
+     * @param int return 2 or 3 digit
+     * @return string
+     */
+    protected function validateLang($lang) {
+        $languages = Configure::read('Config.Languages');
+        $data = array('vi', 1);
+        if (array_key_exists($lang, $languages)) {
+            $data = array($lang, $languages[$lang]);
+        }
         return $data;
     }
 }

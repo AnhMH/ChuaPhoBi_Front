@@ -40,7 +40,7 @@ return [
     'App' => [
         'namespace' => 'App',
         'encoding' => env('APP_ENCODING', 'UTF-8'),
-        'defaultLocale' => env('APP_DEFAULT_LOCALE', 'en_US'),
+        'defaultLocale' => env('APP_DEFAULT_LOCALE', 'vi_VN'),
         'base' => false,
         'dir' => 'src',
         'webroot' => 'webroot',
@@ -344,5 +344,7 @@ return [
      */
     'Session' => [
         'defaults' => 'php',
+        'cookie' => 'ChuaPhoBiFront',
+        'timeout' => 0,
     ],
 ];

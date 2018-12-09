@@ -5,9 +5,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="page_site">
-                        <div class="contact"><a href="lien-he.html" class="face"><i class="fa fa-envelope"></i> Liên hệ</a> | <a href="http://lioahanoi.com/thanh-li-lioa-la-gi-lioa-thanh-ly-3kva-5kva-7kva-10kva-15kva-20kva.html" rel="dofollow" title="Thanh lý lioa" >Thanh lý lioa</a>  </div>
-
-
+                        <div class="contact">
+                            <a href="<?php echo $BASE_URL;?>/lien-he" class="face"><i class="fa fa-envelope"></i> <?php echo __('LABEL_CONTACT');?></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">

@@ -232,6 +232,7 @@ if (Configure::read('debug')) {
  * Custom
  */
 include_once ('apiurl.php');
+Configure::write('Config.CookieExpires', '+12 month');
 
 if ($env == 'production') {
     define('VERSION_DATE', date('Ymd'));
@@ -244,6 +245,14 @@ if ($env == 'production') {
 }
 
 define('DEFAULT_SITE_TITLE', 'Con Là Tất Cả');
+define('COOKIE_LANGUAGE', 'ActCall.Front.Cookie.Language');
 if (!defined('USE_SUB_DIRECTORY')) {
     define('USE_SUB_DIRECTORY', '');
 }
+
+Configure::write('Config.LanguageType', 1);
+// Ref https://www.w3schools.com/tags/ref_language_codes.asp
+Configure::write('Config.Languages', array(
+    'vi' => 1,
+    'zh' => 2
+));
