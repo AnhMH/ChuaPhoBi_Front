@@ -1,17 +1,23 @@
+<?php
+$_title = !empty($pageTitle) ? $pageTitle : 'Chua Pho Bi';
+$_keyword = !empty($pageKeyword) ? $pageKeyword : '';
+$_description = !empty($pageDescription) ? $pageDescription : '';
+$_image = !empty($pageImage) ? $pageImage : '';
+?>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="SHORTCUT ICON" href="/img/favicon.ico">
-<title>Phật học đời sống - tin tức Phật giáo - tin nhanh</title>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
+<link rel="SHORTCUT ICON" href="<?php echo $BASE_URL;?>/favicon.ico">
+<title><?php echo $_title;?></title>
+<meta name="description" content="<?php echo $_description;?>"/>
+<meta name="keywords" content="<?php echo $_keyword;?>"/>
 <meta property="og:locale" content="vi_VN" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Phật học đời sống - tin tức Phật giáo - tin nhanh" />
-<meta property="og:description" content="" />
-<meta property="og:url" content="https://phathocdoisong.com/" />
-<meta property="og:site_name" content="Phật học đời sống - tin tức Phật giáo - tin nhanh" />
-<link rel="alternate" type="application/rss+xml" title="RSS|Phật học đời sống - tin tức Phật giáo - tin nhanh" href="feed.xml" />
+<meta property="og:title" content="<?php echo $_title;?>" />
+<meta property="og:image" content="<?php echo $_image;?>" />
+<meta property="og:description" content="<?php echo $_description;?>" />
+<meta property="og:url" content="<?php echo $current_url;?>" />
+<meta property="og:site_name" content="<?php echo $_title;?>" />
 
 <link rel='stylesheet' id='bootstrap-css'  href='<?php echo $BASE_URL;?>/css/bootstrap.min.css?ver=v3.3.4' type='text/css' media='' />
 <link rel='stylesheet' id='owl.animate-css'  href='<?php echo $BASE_URL;?>/css/animate.min.css' type='text/css' media='' />
