@@ -2,7 +2,7 @@
     <div class="col-lg-9 col-sm-9 col-xs-12">
         <header class="entry-header">
             <div class="entry-meta">
-                <h1 class="cat-links"><?php echo !empty($param['cate_name']) ? $param['cate_name'] : '';?></h1>
+                <h1 class="cat-links"><?php echo __('LABEL_SEARCH');?></h1>
             </div>
         </header>
         <section class="category-area">

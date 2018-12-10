@@ -19,3 +19,6 @@ msgstr "Trang chủ"
 
 msgid "LABEL_CONTACT"
 msgstr "Liên hệ"
+
+msgid "LABEL_SEARCH"
+msgstr "Tìm kiếm"

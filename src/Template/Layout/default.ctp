@@ -18,9 +18,9 @@
                                 </div>
                             </div>  
                             <div class="col-lg-3 col-sm-3">
-                                <form method="get" id="searchform" action="tim-bai-viet.html">
-                                    <input class="text-search" type="text" required="required" value="" name="tu_khoa" id="tim_bai_viet" placeholder="Từ khoá tìm kiếm">
-                                    <input name="search" type="submit" id="buttom-search" class="buttom-search" value="">
+                                <form method="get" id="searchform" action="<?php echo $BASE_URL;?>/tim-kiem">
+                                    <input class="text-search" type="text" required="required" value="" name="keyword" placeholder="Từ khoá tìm kiếm">
+                                    <input type="submit" class="buttom-search" value="">
                                 </form>            
                             </div> 
                         </div>
