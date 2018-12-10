@@ -1,4 +1,11 @@
-
+<?php
+$_setting = !empty($settings['settings']) ? $settings['settings'] : array();
+$fb = !empty($_setting['facebook']) ? $_setting['facebook'] : '';
+$tw = !empty($_setting['twitter']) ? $_setting['twitter'] : '';
+$yt = !empty($_setting['youtube']) ? $_setting['youtube'] : '';
+$gl = !empty($_setting['google_plus']) ? $_setting['google_plus'] : '';
+$footerText = !empty($_setting['footer_text']) ? $_setting['footer_text'] : '';
+?>
 <div id="footer-wrapper">
     <div class="social_fo">
         <div class="container">
@@ -11,12 +18,22 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="social">Kết nối với chúng tôi
-                        <a target="_blank" href="https://www.facebook.com/phathocdoisong9/" class="icon_font face"><i class="fa fa-facebook-official"></i></a>
-                        <a target="_blank" href="https://twitter.com/PHDoiSong" class="icon_font twitte"><i class="fa fa-twitter-square"></i></a>
-                        <a target="_blank" href="https://www.youtube.com/channel/UC4NvC2ABuDYatvOhlMC6GyA" class="icon_font in"><i class="fa fa-youtube-square"></i></a>
-                        <a target="_blank" href="feed.xml" class="icon_font rss"><i class="fa fa-rss-square"></i></a>
-                        <a target="_blank" href="https://plus.google.com/u/0/101522816289850945107/posts" class="icon_font gogle"><i class="fa fa-google-plus-square"></i></a>
+                    <div class="social"><?php echo __('LABEL_CONTACT_US');?>
+                        <?php if (!empty($fb)): ?>
+                        <a target="_blank" href="<?php echo $fb;?>" class="icon_font face"><i class="fa fa-facebook-official"></i></a>
+                        <?php endif; ?>
+                        
+                        <?php if (!empty($tw)): ?>
+                        <a target="_blank" href="<?php echo $tw;?>" class="icon_font twitte"><i class="fa fa-twitter-square"></i></a>
+                        <?php endif; ?>
+                        
+                        <?php if (!empty($yt)): ?>
+                        <a target="_blank" href="<?php echo $yt; ?>" class="icon_font in"><i class="fa fa-youtube-square"></i></a>
+                        <?php endif; ?>
+                        
+                        <?php if (!empty($gl)): ?>
+                        <a target="_blank" href="<?php echo $gl; ?>" class="icon_font gogle"><i class="fa fa-google-plus-square"></i></a>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="to_top">
@@ -32,16 +49,10 @@
                 <div class="col-lg-12">
                     <div class="copyright">
                         <div class="copy" style="font-size:10px;">
-                            <p><strong>© Copyright 2015</strong> <a href="#" title="Thiết kế web Phật học đời sống - tin tức Phật giáo - tin nhanh"><strong>Phật học đời sống - tin tức Phật giáo - tin nhanh</strong></a> </p>
-
-                            <p >Tòa soạn: 207A - Võ Thị Sáu - Phường 7 - Quận 3 - Tp. HCM - ĐT: 0909974199 - VPĐD: 76 Lê Thị Trung - P.Phú Lợi - Tp. Thủ Dầu Một - Bình Dương - ĐT: 0122.771.9559</p>
-
-                            <em><p>Bài vở đóng góp, xin gởi về Ban biên tập qua địa chỉ email: <strong>phdoisong@gmail.com </strong>.  Ghi rõ nguồn <strong>www.phathocdoisong.com</strong> khi bạn phát hành lại thông tin từ website này.</p>
-
-                                <p>Bản quyền thuộc Phật Học Đời Sống. Designed by PHDS </p>
-                            </em>
+                            <?php echo $footerText; ?>
+                            <p>Bản quyền thuộc <strong>CHUAPHOBI.ORG</strong>. Designed by <a href='https://hoanganhonline.com'><strong>HoangAnhOnline.Com</strong></a> </p>
                         </div>
-                        <div class="logo-footer"><div class="hinhfooter"><a href="./" title="Phật học đời sống - tin tức Phật giáo - tin nhanh"> <img src="<?php echo $BASE_URL;?>/images/logo-tinh-thuong-viet.png" /> </a></div></div>
+                        <!--<div class="logo-footer"><div class="hinhfooter"><a href="./" title="Phật học đời sống - tin tức Phật giáo - tin nhanh"> <img src="<?php echo $BASE_URL;?>/images/logo-tinh-thuong-viet.png" /> </a></div></div>-->
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 <?php
-$webTitle = !empty($settings['settings']['web_title']) ? $settings['settings']['web_title'] : 'Phật học đời sống - tin tức Phật giáo - tin nhanh';
+$webTitle = !empty($settings['settings']['name']) ? $settings['settings']['name'] : 'Chua Pho Bi';
+$logo = !empty($settings['settings']['logo']) ? $settings['settings']['logo'] : $BASE_URL.'/images/logo.gif';
 ?>
 <header id="header" class="header">
     <div class="logo-banner">
@@ -9,7 +10,7 @@ $webTitle = !empty($settings['settings']['web_title']) ? $settings['settings']['
                     <div class="col-lg-4 col-sm-4 col-xs-12">
                         <div class="logo">
                             <a title="<?php echo $webTitle;?>" href="<?php echo $BASE_URL;?>" rel="home">
-                                <img src="<?php echo $BASE_URL;?>/images/logo.gif" alt="<?php echo $webTitle;?>">
+                                <img src="<?php echo $logo;?>" alt="<?php echo $webTitle;?>">
                             </a>
                             <h1 class="site-title"><?php echo $webTitle;?></h1>
                         </div>
@@ -42,7 +43,7 @@ $webTitle = !empty($settings['settings']['web_title']) ? $settings['settings']['
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="logo2" title="<?php echo $webTitle;?>" href="./" rel="home">
-                                <img src="<?php echo $BASE_URL;?>/images/logo.gif" alt="<?php echo $webTitle;?>" style="padding-top:7px;">
+                                <img src="<?php echo $logo; ?>" alt="<?php echo $webTitle;?>" style="padding-top:7px;">
                             </a>
                             <a href="<?php echo $BASE_URL;?>" id="reload" title="refresh"><i class="fa fa-refresh"></i></a>
                         </nav>

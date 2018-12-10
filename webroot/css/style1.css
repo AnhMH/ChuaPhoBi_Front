@@ -236,10 +236,11 @@ a.bold {
 	height: 26px;
 	color: #F6EDBC;
 	padding: 0 20px;
-	border: 1px solid #E0CEBD;
+	border: 1px solid #F99D1C;/*#E0CEBD;*/
 	border-left-width: 0;
 	background: #F99D1C url(../images/icon-search.png) no-repeat center center;
-	width: 15%
+	width: 15%;
+        float: left;
 }
 
 .logo h1 {

@@ -22,3 +22,9 @@ msgstr "Liên hệ"
 
 msgid "LABEL_SEARCH"
 msgstr "Tìm kiếm"
+
+msgid "LABEL_CONTACT_US"
+msgstr "Kết nối với chúng tôi"
+
+msgid "LABEL_SEARCH_PLACEHOLDER"
+msgstr "Từ khoá tìm kiếm"

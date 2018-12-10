@@ -1,3 +1,7 @@
+<?php 
+$_setting = !empty($settings['settings']) ? $settings['settings'] : array();
+$welcomeText = !empty($_setting['welcome_text']) ? $_setting['welcome_text'] : '';
+?>
 <!DOCTYPE HTML>
 <html lang="vi-VN">
     <head>
@@ -14,12 +18,12 @@
                         <div class="row">
                             <div class="col-lg-9 col-sm-9">
                                 <div class="slider-posts-news">
-                                    <marquee>chao mung ban den vs website</marquee>
+                                    <marquee><?php echo $welcomeText; ?></marquee>
                                 </div>
                             </div>  
                             <div class="col-lg-3 col-sm-3">
                                 <form method="get" id="searchform" action="<?php echo $BASE_URL;?>/tim-kiem">
-                                    <input class="text-search" type="text" required="required" value="" name="keyword" placeholder="Từ khoá tìm kiếm">
+                                    <input class="text-search" type="text" required="required" value="" name="keyword" placeholder="<?php echo __('LABEL_SEARCH_PLACEHOLDER');?>">
                                     <input type="submit" class="buttom-search" value="">
                                 </form>            
                             </div> 
