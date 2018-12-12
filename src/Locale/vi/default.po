@@ -46,3 +46,6 @@ msgstr "Thông điệp"
 
 msgid "MESSAGE_CONTACT_OK"
 msgstr "Cảm ơn bạn đã liên hệ, chúng tôi sẽ trả lời cho bạn sớm nhất có thể."
+
+msgid "LABEL_NOTICE"
+msgstr "Thông báo"

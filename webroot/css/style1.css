@@ -2220,3 +2220,33 @@ sticknav {
 .fixed {
 	position: fixed;
 }
+
+.notice {
+    background: url(../images/bg_thongbao.png) no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    padding: 75px 45px 39px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.notice h4 {
+    text-transform: uppercase;
+    color: #cc3300;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.notice ul {
+    margin: 10px 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: left;
+}
+.notice ul li {
+    padding: 5px 0px;
+    border-bottom: 1px dotted #ccc;
+    padding-left: 10px;
+}
+.notice ul li a {
+    font-size: 13px;
+}

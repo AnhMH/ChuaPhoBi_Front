@@ -10,7 +10,7 @@ $logo = !empty($settings['settings']['logo']) ? $settings['settings']['logo'] : 
                     <div class="col-lg-4 col-sm-4 col-xs-12">
                         <div class="logo">
                             <a title="<?php echo $webTitle;?>" href="<?php echo $BASE_URL;?>" rel="home">
-                                <img src="<?php echo $logo;?>" alt="<?php echo $webTitle;?>">
+                                <img src="<?php echo $logo;?>" alt="<?php echo $webTitle;?>" style="height: 120px;">
                             </a>
                             <h1 class="site-title"><?php echo $webTitle;?></h1>
                         </div>
