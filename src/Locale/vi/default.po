@@ -28,3 +28,21 @@ msgstr "Kết nối với chúng tôi"
 
 msgid "LABEL_SEARCH_PLACEHOLDER"
 msgstr "Từ khoá tìm kiếm"
+
+msgid "LABEL_CONTACT_NAME"
+msgstr "Tên của bạn"
+
+msgid "LABEL_CONTACT_PHONE"
+msgstr "Số điện thoại"
+
+msgid "LABEL_CONTACT_EMAIL"
+msgstr "Địa chỉ Email"
+
+msgid "LABEL_CONTACT_TITLE"
+msgstr "Tiêu đề"
+
+msgid "LABEL_CONTACT_MESSAGE"
+msgstr "Thông điệp"
+
+msgid "MESSAGE_CONTACT_OK"
+msgstr "Cảm ơn bạn đã liên hệ, chúng tôi sẽ trả lời cho bạn sớm nhất có thể."
