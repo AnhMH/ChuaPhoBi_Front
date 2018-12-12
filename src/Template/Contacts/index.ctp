@@ -35,6 +35,7 @@
         </div>
     </div>
     <div class="col-lg-3 col-sm-3 col-xs-12">
-
+        <?php echo $this->element('layout/notice'); ?>
+        <?php echo $this->element('layout/calendar'); ?>
     </div>
 </div>

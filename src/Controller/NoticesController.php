@@ -9,15 +9,16 @@ namespace App\Controller;
 use App\Lib\Api;
 use Cake\Core\Configure;
 
-class ArticlesController extends AppController {
+class NoticesController extends AppController {
     /**
      * People top page
      */
     public function index($url = '') {
+        $url = explode('.', $url);
         $param = array(
-            'url' => $url
+            'url' => $url[0]
         );
-        $data = Api::call(Configure::read('API.url_posts_detail'), $param);
+        $data = Api::call(Configure::read('API.url_notices_detail'), $param);
         $this->set('data', $data);
         if (!empty($data['name'])) {
             $this->set('pageTitle', $data['name']);

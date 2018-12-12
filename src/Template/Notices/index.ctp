@@ -21,13 +21,6 @@
                     </div>
                 </div>
                 <div class="entry-content">
-                    <h2><strong><?php echo $data['description'];?></strong></h2>
-
-                    <br>	
-                    <ul>
-                    </ul> 	
-                    <br>	
-
                     <?php echo $data['content'];?>
                 </div>
             </div>

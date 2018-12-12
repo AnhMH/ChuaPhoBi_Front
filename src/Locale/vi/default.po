@@ -49,3 +49,6 @@ msgstr "Cảm ơn bạn đã liên hệ, chúng tôi sẽ trả lời cho bạn 
 
 msgid "LABEL_NOTICE"
 msgstr "Thông báo"
+
+msgid "LABEL_VIEW_DETAIL"
+msgstr "Xem chi tiết"

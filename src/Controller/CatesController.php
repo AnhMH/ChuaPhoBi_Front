@@ -31,7 +31,8 @@ class CatesController extends AppController {
         $param = $this->getParams(array(
             'cate_id' => implode(',', $ids),
             'page' => 1,
-            'limit' => $limit
+            'limit' => $limit,
+            'disable' => 0
         ));
         $result = Api::call(Configure::read('API.url_posts_list'), $param);
         $data = !empty($result['data']) ? $result['data'] : array();
