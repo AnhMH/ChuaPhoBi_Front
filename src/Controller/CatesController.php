@@ -24,8 +24,12 @@ class CatesController extends AppController {
                 $ids[] = $c['id'];
                 $rootId = $c['id'];
             }
-            if (!empty($rootId) && $c['root_id'] == $rootId) {
-                $ids[] = $c['id'];
+        }
+        if (!empty($rootId)) {
+            foreach ($this->_settings['cates'] as $c) {
+                if ($c['root_id'] == $rootId) {
+                    $ids[] = $c['id'];
+                }
             }
         }
         $param = $this->getParams(array(
