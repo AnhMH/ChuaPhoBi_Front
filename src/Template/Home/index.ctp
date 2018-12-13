@@ -14,7 +14,7 @@ $posts = !empty($data['posts']) ? $data['posts'] : array();
     <div class="col-lg-3 col-sm-3 col-xs-12">
         <?php echo $this->element('Layout/notice'); ?>
         <?php if (!empty($posts[3])): ?>
-            <?php echo $this->element('Post/layout2', array('posts' => $posts[3])); ?>
+            <?php echo $this->element('Post/layout2', array('posts' => $posts[3], 'limit' => 3)); ?>
         <?php endif; ?>
         <?php echo $this->element('Layout/calendar'); ?>
     </div>

@@ -23,6 +23,7 @@
             <div class="list-posts">
                 <ul>
                     <?php foreach ($c as $pk => $p): ?>
+                    <?php if (!empty($limit) && $pk == $limit) { break; } ?>
                         <?php if ($pk == 0): ?> 
                             <li class="first">
                                 <a class="bold" href="<?php echo $BASE_URL . '/bai-viet/' . $p['url']; ?>" title="<?php echo $p['name']; ?>"><?php echo $p['name']; ?></a>
