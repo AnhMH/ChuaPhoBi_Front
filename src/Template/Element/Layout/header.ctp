@@ -1,6 +1,9 @@
 <?php
-$webTitle = !empty($settings['settings']['name']) ? $settings['settings']['name'] : 'Chua Pho Bi';
-$logo = !empty($settings['settings']['logo']) ? $settings['settings']['logo'] : $BASE_URL.'/images/logo.gif';
+$_setting = !empty($settings['settings']) ? $settings['settings'] : array();
+$webTitle = !empty($_setting['name']) ? $_setting['name'] : 'Chua Pho Bi';
+$logo = !empty($_setting['logo']) ? $_setting['logo'] : $BASE_URL.'/images/logo.jpg';
+$fb = !empty($_setting['facebook']) ? $_setting['facebook'] : '';
+$ytb = !empty($_setting['youtube']) ? $_setting['youtube'] : '';
 ?>
 <header id="header" class="header">
     <div class="logo-banner">
@@ -15,7 +18,18 @@ $logo = !empty($settings['settings']['logo']) ? $settings['settings']['logo'] : 
                             <h1 class="site-title"><?php echo $webTitle;?></h1>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-sm-8 hidden-xs"></div>
+                    <div class="col-lg-8 col-sm-8 hidden-xs">
+                        <ul class="header-language">
+                            <?php if (!empty($ytb)): ?>
+                            <li><a href="<?php echo $ytb;?>">Youtube</a></li>
+                            <?php endif; ?>
+                            <?php if (!empty($fb)): ?>
+                            <li><a href="<?php echo $fb;?>">Facebook</a></li>
+                            <?php endif; ?>
+                            <li><a href="?lang=vi">Tiếng Việt</a></li>
+                            <li><a href="?lang=zh">中文</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

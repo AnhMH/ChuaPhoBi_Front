@@ -2251,3 +2251,15 @@ sticknav {
 .notice ul li a {
     font-size: 13px;
 }
+.header-language {
+    float: right;
+}
+.header-language li {
+    display: inline-block;
+    border: 1px solid #0C5331;
+    margin-left: 10px;
+    padding: 10px 15px;
+}
+.wrapper-logo-banner ul.header-language li a{
+    line-height: 100%;
+}

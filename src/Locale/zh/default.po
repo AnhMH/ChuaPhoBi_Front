@@ -15,7 +15,40 @@ msgid "KEY"
 msgstr "China"
 
 msgid "LABEL_HOME"
-msgstr "Trang chủ cn"
+msgstr "首頁"
 
 msgid "LABEL_CONTACT"
-msgstr "Liên hệ cn"
+msgstr "聯繫"
+
+msgid "LABEL_SEARCH"
+msgstr "查"
+
+msgid "LABEL_CONTACT_US"
+msgstr "關於我們"
+
+msgid "LABEL_SEARCH_PLACEHOLDER"
+msgstr "查尋"
+
+msgid "LABEL_CONTACT_NAME"
+msgstr "姓名"
+
+msgid "LABEL_CONTACT_PHONE"
+msgstr "聯絡電話"
+
+msgid "LABEL_CONTACT_EMAIL"
+msgstr "郵箱地址"
+
+msgid "LABEL_CONTACT_TITLE"
+msgstr "問題主主旨"
+
+msgid "LABEL_CONTACT_MESSAGE"
+msgstr "內容"
+
+msgid "MESSAGE_CONTACT_OK"
+msgstr "謝謝你的觀看，我們會跟你聯絡"
+
+msgid "LABEL_NOTICE"
+msgstr "公告"
+
+msgid "LABEL_VIEW_DETAIL"
+msgstr "閱讀全文"
