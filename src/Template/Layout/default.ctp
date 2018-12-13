@@ -5,12 +5,12 @@ $welcomeText = !empty($_setting['welcome_text']) ? $_setting['welcome_text'] : '
 <!DOCTYPE HTML>
 <html lang="vi-VN">
     <head>
-        <?php echo $this->element('layout/head'); ?>
+        <?php echo $this->element('Layout/head'); ?>
     </head>
     <body class="home archive">
         <div class="wrapper">
             <div id="header-wrapper">
-                <?php echo $this->element('layout/header'); ?>
+                <?php echo $this->element('Layout/header'); ?>
             </div>       
             <div id="main">
                 <section class="slider">
@@ -36,7 +36,7 @@ $welcomeText = !empty($_setting['welcome_text']) ? $_setting['welcome_text'] : '
                     </div>
                 </section>
             </div>
-            <?php echo $this->element('layout/footer'); ?>
+            <?php echo $this->element('Layout/footer'); ?>
         </div>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!--<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/jquery-ui.custom.min.js"></script>-->
