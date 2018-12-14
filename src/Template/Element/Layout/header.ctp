@@ -1,34 +1,35 @@
 <?php
 $_setting = !empty($settings['settings']) ? $settings['settings'] : array();
 $webTitle = !empty($_setting['name']) ? $_setting['name'] : 'Chua Pho Bi';
-$logo = !empty($_setting['logo']) ? $_setting['logo'] : $BASE_URL.'/images/logo.jpg';
+$logo = !empty($_setting['logo']) ? $_setting['logo'] : $BASE_URL . '/images/logo.jpg';
 $fb = !empty($_setting['facebook']) ? $_setting['facebook'] : '';
 $ytb = !empty($_setting['youtube']) ? $_setting['youtube'] : '';
+$bgHeader = !empty($_setting['bg_header']) ? $_setting['bg_header'] : $BASE_URL . '/images/bg_header2.jpg';
 ?>
 <header id="header" class="header">
     <div class="logo-banner">
         <div class="wrapper-logo-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-sm-4 col-xs-12">
-                        <div class="logo">
-                            <a title="<?php echo $webTitle;?>" href="<?php echo $BASE_URL;?>" rel="home">
-                                <img src="<?php echo $logo;?>" alt="<?php echo $webTitle;?>" style="height: 120px;">
-                            </a>
-                            <h1 class="site-title"><?php echo $webTitle;?></h1>
+                    <div class="col-sm-12 hidden-xs">
+                        <div class="header-container" style="background-image: url('<?php echo $bgHeader;?>');">
+<!--                            <div class="logo">
+                                <a title="<?php echo $webTitle; ?>" href="<?php echo $BASE_URL; ?>" rel="home">
+                                    <img src="<?php echo $logo; ?>" alt="<?php echo $webTitle; ?>" style="height: 120px;">
+                                </a>
+                                <h1 class="site-title"><?php echo $webTitle; ?></h1>
+                            </div>-->
+                            <ul class="header-language">
+                                <?php if (!empty($ytb)): ?>
+                                    <li><a href="<?php echo $ytb; ?>">Youtube</a></li>
+                                <?php endif; ?>
+                                <?php if (!empty($fb)): ?>
+                                    <li><a href="<?php echo $fb; ?>">Facebook</a></li>
+                                <?php endif; ?>
+                                <li><a href="?lang=vi">Tiếng Việt</a></li>
+                                <li><a href="?lang=zh">中文</a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-lg-8 col-sm-8 hidden-xs">
-                        <ul class="header-language">
-                            <?php if (!empty($ytb)): ?>
-                            <li><a href="<?php echo $ytb;?>">Youtube</a></li>
-                            <?php endif; ?>
-                            <?php if (!empty($fb)): ?>
-                            <li><a href="<?php echo $fb;?>">Facebook</a></li>
-                            <?php endif; ?>
-                            <li><a href="?lang=vi">Tiếng Việt</a></li>
-                            <li><a href="?lang=zh">中文</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -56,10 +57,10 @@ $ytb = !empty($_setting['youtube']) ? $_setting['youtube'] : '';
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="logo2" title="<?php echo $webTitle;?>" href="./" rel="home">
-                                <img src="<?php echo $logo; ?>" alt="<?php echo $webTitle;?>" style="padding-top:7px;">
+                            <a class="logo2" title="<?php echo $webTitle; ?>" href="./" rel="home">
+                                <img src="<?php echo $logo; ?>" alt="<?php echo $webTitle; ?>" style="padding-top:7px;">
                             </a>
-                            <a href="<?php echo $BASE_URL;?>" id="reload" title="refresh"><i class="fa fa-refresh"></i></a>
+                            <a href="<?php echo $BASE_URL; ?>" id="reload" title="refresh"><i class="fa fa-refresh"></i></a>
                         </nav>
                     </sticknav>
                     <div id="off-canvas">

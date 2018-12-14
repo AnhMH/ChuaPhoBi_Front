@@ -63,7 +63,7 @@ li {
 	list-style: none outside none
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="reset"] {
 	border: 0;
 	background: #0054A6;
 	width: auto;
@@ -72,6 +72,9 @@ input[type="submit"] {
 	color: #fff;
 	outline: none;
 	cursor: pointer
+}
+input[type="reset"] {
+    background: #EC1C24;
 }
 
 input[type="text"],
@@ -188,8 +191,7 @@ a.bold {
 	background: #f2f2f2
 }
 
-.top_contact,
-.logo-banner {
+.top_contact {
 	padding: 5px 0
 }
 
@@ -2222,7 +2224,7 @@ sticknav {
 }
 
 .notice {
-    background: url(../images/bg_thongbao.png) no-repeat;
+    background: url(../images/bg_thongbao.jpg) no-repeat;
     background-size: 100% 100%;
     float: left;
     padding: 75px 45px 39px;
@@ -2262,4 +2264,14 @@ sticknav {
 }
 .wrapper-logo-banner ul.header-language li a{
     line-height: 100%;
+}
+.header-container {
+    /*background-image: url(../images/bg_header2.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 350px;
+}
+.header-container .logo {
+    display: inline-block;
+    width: 40%;
 }

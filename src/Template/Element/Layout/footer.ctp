@@ -50,7 +50,6 @@ $footerText = !empty($_setting['footer_text']) ? $_setting['footer_text'] : '';
                     <div class="copyright">
                         <div class="copy" style="font-size:10px;">
                             <?php echo $footerText; ?>
-                            <p>Bản quyền thuộc <strong>CHUAPHOBI.ORG</strong>. Designed by <a href='https://hoanganhonline.com'><strong>HoangAnhOnline.Com</strong></a> </p>
                         </div>
                         <!--<div class="logo-footer"><div class="hinhfooter"><a href="./" title="Phật học đời sống - tin tức Phật giáo - tin nhanh"> <img src="<?php echo $BASE_URL;?>/images/logo-tinh-thuong-viet.png" /> </a></div></div>-->
                     </div>

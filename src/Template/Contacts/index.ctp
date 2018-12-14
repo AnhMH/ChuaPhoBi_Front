@@ -27,7 +27,8 @@
                         </p>
                         <p style="padding:15px 0;">
                             <input type="hidden" name="act" value="gui" class="btn_gui">
-                            <input type="submit" value="Gửi đi">
+                            <input type="submit" value="<?php echo __('LABEL_BTN_SEND');?>">
+                            <input type="reset" value="<?php echo __('LABEL_BTN_RESET');?>">
                         </p>
                     </form>
                 </div>
