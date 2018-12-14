@@ -5,7 +5,7 @@
     $cateUrl = !empty($cate['url']) ? $cate['url'] : '';
     ?>
     <header class="entry-header">
-        <div class="entry-meta">
+        <div class="entry-meta gradient">
             <h1 class="cat-links">
                 <?php echo $cateName; ?>
             </h1>

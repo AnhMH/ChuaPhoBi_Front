@@ -159,7 +159,9 @@ a.bold {
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
-	float: left
+	float: left;
+        background: #a2c543 url('../images/bg_body3.jpg') no-repeat fixed top center;
+        background-size: 100% 100%;
 }
 
 .slider .col-lg-9 {
@@ -218,7 +220,8 @@ a.bold {
 
 #searchform {
 	float: right;
-	width: 100%
+	width: 100%;
+        margin: 10px 0;
 }
 
 #searchform input[type="text"] {
@@ -547,7 +550,6 @@ body.mnopen #off-canvas {
 .slider {
 	float: left;
 	width: 100%;
-	margin: 10px 0
 }
 
 .title-posts-news {
@@ -582,7 +584,8 @@ body.mnopen #off-canvas {
 .slider .slider-posts-news {
 	float: left;
 	width: 100%;
-	border-bottom: 1px solid #D6D6D6
+	border-bottom: 1px solid #D6D6D6;
+        margin-top: 10px;
 }
 
 .slider .slider-posts-news .item a {
@@ -1054,6 +1057,9 @@ body.mnopen #off-canvas {
 .social_fo {
 	background: #d9d9d9
 }
+.social_fo .container {
+    background: transparent;
+}
 
 .social_fo .page_site div {
 	float: left;
@@ -1358,7 +1364,8 @@ h1.cat-links {
 	font-weight: 700;
 	font-size: 24px;
 	margin-bottom: 10px;
-	display: block
+	display: block;
+        padding-left: 10px;
 }
 
 .list_category h2,
@@ -2255,15 +2262,31 @@ sticknav {
 }
 .header-language {
     float: right;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 .header-language li {
     display: inline-block;
     border: 1px solid #0C5331;
     margin-left: 10px;
     padding: 10px 15px;
+    background: #0C5331;
+}
+.header-language li.active {
+    background: #FFFFCC;
 }
 .wrapper-logo-banner ul.header-language li a{
     line-height: 100%;
+    color: #fff;
+}
+.wrapper-logo-banner ul.header-language li.active a{
+    color: #330033;
+}
+#header-fb {
+    background: #3B5998;
+}
+#header-ytb {
+    background: #cc181e;
 }
 .header-container {
     /*background-image: url(../images/bg_header2.jpg);*/
@@ -2274,4 +2297,13 @@ sticknav {
 .header-container .logo {
     display: inline-block;
     width: 40%;
+}
+.container {
+    background: #fff;
+}
+.entry-meta.gradient {
+    background-image: linear-gradient(rgba(253,229,189,1), rgba(255,255,255,1));
+    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0;
 }

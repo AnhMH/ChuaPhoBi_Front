@@ -21,13 +21,13 @@ $bgHeader = !empty($_setting['bg_header']) ? $_setting['bg_header'] : $BASE_URL 
                             </div>-->
                             <ul class="header-language">
                                 <?php if (!empty($ytb)): ?>
-                                    <li><a href="<?php echo $ytb; ?>">Youtube</a></li>
+                                <li id="header-ytb"><a href="<?php echo $ytb; ?>">Youtube</a></li>
                                 <?php endif; ?>
                                 <?php if (!empty($fb)): ?>
-                                    <li><a href="<?php echo $fb; ?>">Facebook</a></li>
+                                    <li id="header-fb"><a href="<?php echo $fb; ?>">Facebook</a></li>
                                 <?php endif; ?>
-                                <li><a href="?lang=vi">Tiếng Việt</a></li>
-                                <li><a href="?lang=zh">中文</a></li>
+                                <li <?php echo (!empty($lang) && $lang == 'vi') ? "class='active'" : ""; ?>><a href="?lang=vi">Tiếng Việt</a></li>
+                                <li <?php echo (!empty($lang) && $lang == 'zh') ? "class='active'" : ""; ?>><a href="?lang=zh">中文</a></li>
                             </ul>
                         </div>
                     </div>

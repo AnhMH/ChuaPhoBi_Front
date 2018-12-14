@@ -1,6 +1,7 @@
 <?php 
 $_setting = !empty($settings['settings']) ? $settings['settings'] : array();
 $welcomeText = !empty($_setting['welcome_text']) ? $_setting['welcome_text'] : '';
+$bgBody = !empty($_setting['bg_body']) ? $_setting['bg_body'] : $BASE_URL . '/images/bg_body2.jpg';
 ?>
 <!DOCTYPE HTML>
 <html lang="vi-VN">
@@ -8,7 +9,7 @@ $welcomeText = !empty($_setting['welcome_text']) ? $_setting['welcome_text'] : '
         <?php echo $this->element('Layout/head'); ?>
     </head>
     <body class="home archive">
-        <div class="wrapper">
+        <div class="wrapper" style="background-image: url('<?php echo $bgBody;?>');">
             <div id="header-wrapper">
                 <?php echo $this->element('Layout/header'); ?>
             </div>       
