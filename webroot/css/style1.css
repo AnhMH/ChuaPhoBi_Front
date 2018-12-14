@@ -1050,15 +1050,10 @@ body.mnopen #off-canvas {
 #footer-wrapper {
 	float: left;
 	width: 100%;
-	border-top: 2px solid #EC1C24;
-	margin-top: 10px
-}
-
-.social_fo {
-	background: #d9d9d9
 }
 .social_fo .container {
-    background: transparent;
+        background: #fff;
+        border: 1px solid #ccc;
 }
 
 .social_fo .page_site div {
@@ -1114,10 +1109,6 @@ body.mnopen #off-canvas {
 
 .box_footer {
 	margin-bottom: 10px
-}
-
-#footer {
-	padding-top: 15px
 }
 
 #footer,
@@ -2267,26 +2258,31 @@ sticknav {
 }
 .header-language li {
     display: inline-block;
-    border: 1px solid #0C5331;
+    /*border: 1px solid #0C5331;*/
+    border-radius: 3px;
     margin-left: 10px;
     padding: 10px 15px;
-    background: #0C5331;
+    /*background: #0C5331;*/
+    background-image: url(../images/bg_language_btn.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 1px 1.5px #646361;
 }
 .header-language li.active {
-    background: #FFFFCC;
+    /*background: #FFFFCC;*/
 }
 .wrapper-logo-banner ul.header-language li a{
     line-height: 100%;
-    color: #fff;
+    color: #EC1C24;
 }
 .wrapper-logo-banner ul.header-language li.active a{
-    color: #330033;
+    /*color: #330033;*/
 }
 #header-fb {
-    background: #3B5998;
+    /*background: #3B5998;*/
 }
 #header-ytb {
-    background: #cc181e;
+    /*background: #cc181e;*/
 }
 .header-container {
     /*background-image: url(../images/bg_header2.jpg);*/
