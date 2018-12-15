@@ -5,6 +5,8 @@ $(document).ready(function(e) {
     menuMobile();
     
     socialShare();
+    
+    addPageView();
 });
 
 /*Scroll to Top*/
@@ -61,4 +63,15 @@ function socialShare() {
 function urlEncode(str){
     str = (str + '').toString();
     return encodeURIComponent(str).replace(/#!/g, '%23').replace(/!/g, '%21').replace(/'/g, '%27').replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A').replace(/%20/g, '+');
+}
+
+function addPageView() {
+    $.ajax({
+        type: "POST",
+        url: baseUrl + '/ajax/setpageview',
+        data: {},
+        complete: function () {
+
+        }
+    });
 }

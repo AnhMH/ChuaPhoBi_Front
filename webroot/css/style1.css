@@ -65,6 +65,7 @@ li {
 
 input[type="submit"], input[type="reset"] {
 	border: 0;
+	border-radius: 4px;
 	background: #0054A6;
 	width: auto;
 	line-height: 30px;
@@ -74,7 +75,7 @@ input[type="submit"], input[type="reset"] {
 	cursor: pointer
 }
 input[type="reset"] {
-    background: #EC1C24;
+    background: #cc4d44;
 }
 
 input[type="text"],
@@ -278,7 +279,7 @@ a.bold {
 .main-menu ul {
 	float: left;
 	width: 100%;
-	background-color: #0C5331;
+	background-color: #cc4d44;
 }
 
 .main-menu ul li {
@@ -719,7 +720,7 @@ body.mnopen #off-canvas {
 }
 
 .subcat {
-	border-top: 2px solid #EC1C24;
+	border-top: 2px solid #cc4d44;
 	border-bottom: 1px solid #d9d9d9;
 	display: inline-block;
 	width: 100%;
@@ -727,7 +728,7 @@ body.mnopen #off-canvas {
 }
 
 .subcat .title_active {
-	background: #EC1C24;
+	background: #cc4d44;
 	float: left;
 	padding: 0 10px;
 	position: relative;
@@ -1140,7 +1141,13 @@ body.mnopen #off-canvas {
 
 .copy {
 	float: left;
-	width: 82.4%;
+	width: 78.4%;
+}
+
+.footer_number_view{
+	width: 21.6%;
+	float: right;
+	font-size: 11px;
 }
 
 .hinhfooter {
@@ -1351,7 +1358,7 @@ body.mnopen #off-canvas {
 }
 
 h1.cat-links {
-	color: #EC1C24;
+	color: #cc4d44;
 	font-weight: 700;
 	font-size: 24px;
 	margin-bottom: 10px;
@@ -2130,6 +2137,9 @@ article.comment .comment-reply-link:hover {
 }
 
 @media screen and (max-width: 480px) {
+	.main{
+		padding-top: 0;
+	}
 	.top_contact {
 		display: none
 	}
@@ -2140,6 +2150,14 @@ article.comment .comment-reply-link:hover {
 	}
 	.list_category .item-small {
 		width: 100%
+	}
+	.copy{
+		width: 100%;
+		float: none;
+	}
+	.footer_number_view {
+		width: 100%;
+		float: none;
 	}
 }
 
@@ -2273,7 +2291,7 @@ sticknav {
 }
 .wrapper-logo-banner ul.header-language li a{
     line-height: 100%;
-    color: #EC1C24;
+    color: #d6684d;
 }
 .wrapper-logo-banner ul.header-language li.active a{
     /*color: #330033;*/

@@ -244,8 +244,9 @@ if ($env == 'production') {
     include_once ('development/bootstrap.php');
 }
 
-define('DEFAULT_SITE_TITLE', 'Con Là Tất Cả');
-define('COOKIE_LANGUAGE', 'ActCall.Front.Cookie.Language');
+define('DEFAULT_SITE_TITLE', 'Chua Pho Bi');
+define('COOKIE_LANGUAGE', 'ChuaPhoBi.Front.Cookie.Language');
+define('SESSION_PAGE_VIEW', 'SESSION_PAGE_VIEW');
 if (!defined('USE_SUB_DIRECTORY')) {
     define('USE_SUB_DIRECTORY', '');
 }

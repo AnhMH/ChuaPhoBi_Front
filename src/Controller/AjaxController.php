@@ -5,6 +5,9 @@
  */
 
 namespace App\Controller;
+use App\Lib\Api;
+use Cake\Routing\Router;
+use Cake\Core\Configure;
 
 class AjaxController extends AppController {
     
@@ -16,8 +19,14 @@ class AjaxController extends AppController {
     /**
      * Product detail
      */
-    public function productdetail() {
-        $data = $this->request->data();
-        $this->set('data', $data);
+    public function setpageview() {
+        $this->autoRender = false;
+        $session = Router::getRequest(true)->session();
+        $visit = !empty($session->check(SESSION_PAGE_VIEW)) ? 0 : 1;
+        Api::call(Configure::read('API.url_settings_setpageview'), array(
+            'is_visit' => $visit
+        ));
+        $session->write(SESSION_PAGE_VIEW, 1);
+        exit();
     }
 }

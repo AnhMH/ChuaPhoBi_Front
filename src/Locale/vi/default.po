@@ -58,3 +58,9 @@ msgstr "Gửi đi"
 
 msgid "LABEL_BTN_RESET"
 msgstr "Xoá"
+
+msgid "LABEL_TOTAL_VIEW"
+msgstr "Tổng số người xem trang:"
+
+msgid "LABEL_TOTAL_VISIT"
+msgstr "Tổng số người truy cập:"

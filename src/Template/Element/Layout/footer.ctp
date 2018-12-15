@@ -5,6 +5,8 @@ $tw = !empty($_setting['twitter']) ? $_setting['twitter'] : '';
 $yt = !empty($_setting['youtube']) ? $_setting['youtube'] : '';
 $gl = !empty($_setting['google_plus']) ? $_setting['google_plus'] : '';
 $footerText = !empty($_setting['footer_text']) ? $_setting['footer_text'] : '';
+$totalView = !empty($_setting['total_view']) ? $_setting['total_view'] : 0;
+$totalVisit = !empty($_setting['total_visit']) ? $_setting['total_visit'] : 0;
 ?>
 <div id="footer-wrapper">
     <div class="social_fo">
@@ -51,13 +53,14 @@ $footerText = !empty($_setting['footer_text']) ? $_setting['footer_text'] : '';
                         <div class="copy" style="font-size:10px;">
                             <?php echo $footerText; ?>
                         </div>
+                        <div class="footer_number_view">
+                            <p><?php echo __('LABEL_TOTAL_VIEW').' '.$totalView;?></p>
+                            <p><?php echo __('LABEL_TOTAL_VISIT').' '.$totalVisit;?></p>
+                        </div>
                         <!--<div class="logo-footer"><div class="hinhfooter"><a href="./" title="Phật học đời sống - tin tức Phật giáo - tin nhanh"> <img src="<?php echo $BASE_URL;?>/images/logo-tinh-thuong-viet.png" /> </a></div></div>-->
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-
-
 </div>
