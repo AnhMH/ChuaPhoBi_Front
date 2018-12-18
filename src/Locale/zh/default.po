@@ -52,3 +52,18 @@ msgstr "公告"
 
 msgid "LABEL_VIEW_DETAIL"
 msgstr "閱讀全文"
+
+msgid "LABEL_BTN_SEND"
+msgstr "確定送出"
+
+msgid "LABEL_BTN_RESET"
+msgstr "取消重填"
+
+msgid "LABEL_TOTAL_VIEW"
+msgstr "觀看次數:"
+
+msgid "LABEL_TOTAL_VISIT"
+msgstr "在線人數:"
+
+msgid "LABEL_WEB_LINKS"
+msgstr "聯營網站"
