@@ -64,3 +64,6 @@ msgstr "Tổng số người xem trang:"
 
 msgid "LABEL_TOTAL_VISIT"
 msgstr "Tổng số người truy cập:"
+
+msgid "LABEL_WEB_LINKS"
+msgstr "Website liên kết"

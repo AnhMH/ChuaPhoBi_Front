@@ -2038,22 +2038,30 @@ sticknav {
 }
 .header-language li {
     display: inline-block;
-    /*border: 1px solid #0C5331;*/
-    border-radius: 3px;
     margin-left: 10px;
-    padding: 10px 15px;
-    /*background: #0C5331;*/
-    background-image: url(../images/bg_language_btn.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    box-shadow: 1px 1.5px #646361;
 }
 .header-language li.active {
     /*background: #FFFFCC;*/
 }
 .wrapper-logo-banner ul.header-language li a{
-    line-height: 100%;
-    color: #d6684d;
+	line-height: 100%;
+	display: block;
+	width: 100%;
+	padding-left: 50px;
+	padding-top: 10px;
+	background: #bf0d00;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	border-radius: 4px;
+	background-image: url(/images/icon_flower_bold.png);
+	background-size: 40px;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: 5px;
+	color: #ffffff;
+	/* border: 1px solid #c74a47; */
+	box-shadow: none;
+	border: none;
 }
 .wrapper-logo-banner ul.header-language li.active a{
     /*color: #330033;*/
@@ -2083,7 +2091,12 @@ sticknav {
     padding-top: 10px;
     margin-top: 0;
 }
-
+.web-links a img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
 
 /* = Responsive
 -------------------------------------------------------------- */

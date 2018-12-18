@@ -16,6 +16,7 @@ $posts = !empty($data['posts']) ? $data['posts'] : array();
         <?php if (!empty($posts[3])): ?>
             <?php echo $this->element('Post/layout2', array('posts' => $posts[3], 'limit' => 3)); ?>
         <?php endif; ?>
+        <?php echo $this->element('Layout/weblink'); ?>
         <?php echo $this->element('Layout/calendar'); ?>
     </div>
 </div>
