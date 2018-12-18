@@ -1989,6 +1989,102 @@ article.comment .comment-reply-link:hover {
 }
 
 
+sticknav {
+	background: #ffffff;
+	height: 30px;
+	width: 1138px;
+	position: relative;
+	z-index: 9999;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.notice {
+    background: url(../images/bg_thongbao.jpg) no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    padding: 75px 45px 39px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.notice h4 {
+    text-transform: uppercase;
+    color: #cc3300;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.notice ul {
+    margin: 10px 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: left;
+}
+.notice ul li {
+    padding: 5px 0px;
+    border-bottom: 1px dotted #ccc;
+    padding-left: 10px;
+}
+.notice ul li a {
+    font-size: 13px;
+}
+.header-language {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.header-language li {
+    display: inline-block;
+    /*border: 1px solid #0C5331;*/
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 10px 15px;
+    /*background: #0C5331;*/
+    background-image: url(../images/bg_language_btn.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 1px 1.5px #646361;
+}
+.header-language li.active {
+    /*background: #FFFFCC;*/
+}
+.wrapper-logo-banner ul.header-language li a{
+    line-height: 100%;
+    color: #d6684d;
+}
+.wrapper-logo-banner ul.header-language li.active a{
+    /*color: #330033;*/
+}
+#header-fb {
+    /*background: #3B5998;*/
+}
+#header-ytb {
+    /*background: #cc181e;*/
+}
+.header-container {
+    /*background-image: url(../images/bg_header2.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 350px;
+}
+.header-container .logo {
+    display: inline-block;
+    width: 40%;
+}
+.container {
+    background: #fff;
+}
+.entry-meta.gradient {
+    background-image: linear-gradient(rgba(253,229,189,1), rgba(255,255,255,1));
+    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+
 /* = Responsive
 -------------------------------------------------------------- */
 
@@ -2159,6 +2255,12 @@ article.comment .comment-reply-link:hover {
 		width: 100%;
 		float: none;
 	}
+        .header-container {
+            height: 150px;
+        }
+        .header-language li {
+            padding: 5px;
+        }
 }
 
 @media screen and (max-width: 390px) {
@@ -2226,98 +2328,3 @@ article.comment .comment-reply-link:hover {
 }
 
 @media screen and (max-width: 320px) {}
-
-sticknav {
-	background: #ffffff;
-	height: 30px;
-	width: 1138px;
-	position: relative;
-	z-index: 9999;
-}
-
-.fixed {
-	position: fixed;
-}
-
-.notice {
-    background: url(../images/bg_thongbao.jpg) no-repeat;
-    background-size: 100% 100%;
-    float: left;
-    padding: 75px 45px 39px;
-    text-align: center;
-    margin-bottom: 10px;
-    width: 100%;
-}
-.notice h4 {
-    text-transform: uppercase;
-    color: #cc3300;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-.notice ul {
-    margin: 10px 0px;
-    padding: 0px;
-    list-style: none;
-    text-align: left;
-}
-.notice ul li {
-    padding: 5px 0px;
-    border-bottom: 1px dotted #ccc;
-    padding-left: 10px;
-}
-.notice ul li a {
-    font-size: 13px;
-}
-.header-language {
-    float: right;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-.header-language li {
-    display: inline-block;
-    /*border: 1px solid #0C5331;*/
-    border-radius: 3px;
-    margin-left: 10px;
-    padding: 10px 15px;
-    /*background: #0C5331;*/
-    background-image: url(../images/bg_language_btn.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    box-shadow: 1px 1.5px #646361;
-}
-.header-language li.active {
-    /*background: #FFFFCC;*/
-}
-.wrapper-logo-banner ul.header-language li a{
-    line-height: 100%;
-    color: #d6684d;
-}
-.wrapper-logo-banner ul.header-language li.active a{
-    /*color: #330033;*/
-}
-#header-fb {
-    /*background: #3B5998;*/
-}
-#header-ytb {
-    /*background: #cc181e;*/
-}
-.header-container {
-    /*background-image: url(../images/bg_header2.jpg);*/
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 350px;
-}
-.header-container .logo {
-    display: inline-block;
-    width: 40%;
-}
-.container {
-    background: #fff;
-}
-.entry-meta.gradient {
-    background-image: linear-gradient(rgba(253,229,189,1), rgba(255,255,255,1));
-    margin-bottom: 10px;
-    padding-top: 10px;
-    margin-top: 0;
-}

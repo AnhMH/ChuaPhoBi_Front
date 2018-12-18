@@ -11,7 +11,7 @@ $bgHeader = !empty($_setting['bg_header']) ? $_setting['bg_header'] : $BASE_URL 
         <div class="wrapper-logo-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 hidden-xs">
+                    <div class="col-sm-12">
                         <div class="header-container" style="background-image: url('<?php echo $bgHeader;?>');">
 <!--                            <div class="logo">
                                 <a title="<?php echo $webTitle; ?>" href="<?php echo $BASE_URL; ?>" rel="home">
@@ -57,7 +57,7 @@ $bgHeader = !empty($_setting['bg_header']) ? $_setting['bg_header'] : $BASE_URL 
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="logo2" title="<?php echo $webTitle; ?>" href="./" rel="home">
+                            <a class="logo2" title="<?php echo $webTitle; ?>" href="<?php echo $BASE_URL; ?>" rel="home">
                                 <img src="<?php echo $logo; ?>" alt="<?php echo $webTitle; ?>" style="padding-top:7px;">
                             </a>
                             <a href="<?php echo $BASE_URL; ?>" id="reload" title="refresh"><i class="fa fa-refresh"></i></a>
