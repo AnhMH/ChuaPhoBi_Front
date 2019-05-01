@@ -19,6 +19,9 @@ class ArticlesController extends AppController {
         );
         $data = Api::call(Configure::read('API.url_posts_detail'), $param);
         $this->set('data', $data);
+        if (empty($data) || !empty(Api::getError())) {
+            return $this->redirect($this->BASE_URL);
+        }
         if (!empty($data['name'])) {
             $this->set('pageTitle', $data['name']);
         }

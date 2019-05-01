@@ -21,13 +21,14 @@
                     </div>
                 </div>
                 <div class="entry-content">
+                    <?php if (!empty($data['description'])): ?>
                     <h2><strong><?php echo $data['description'];?></strong></h2>
-
+                    
                     <br>	
                     <ul>
                     </ul> 	
                     <br>	
-
+                    <?php endif; ?>
                     <?php echo $data['content'];?>
                 </div>
             </div>

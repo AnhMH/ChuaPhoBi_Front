@@ -66,4 +66,4 @@ msgid "LABEL_TOTAL_VISIT"
 msgstr "在線人數:"
 
 msgid "LABEL_WEB_LINKS"
-msgstr "聯營網站"
+msgstr "友善連結"

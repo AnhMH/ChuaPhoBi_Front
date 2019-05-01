@@ -1,7 +1,7 @@
 <?php
 $_title = !empty($pageTitle) ? $pageTitle : 'Chua Pho Bi';
 $_keyword = !empty($pageKeyword) ? $pageKeyword : '';
-$_description = !empty($pageDescription) ? $pageDescription : '';
+$_description = !empty($pageDescription) ? htmlentities($pageDescription) : '';
 $_image = !empty($pageImage) ? $pageImage : '';
 ?>
 <meta charset="UTF-8" />
